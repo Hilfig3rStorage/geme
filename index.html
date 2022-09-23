@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Awoken's Games | Play</title>
+    <meta charset="utf-8">
+    <meta content='width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1' name='viewport' />
+    <meta content='no-referrer' name='referrer' />
+    <meta content="Happy gaming!" name="description">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/user_css/home.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <!-- Boxicons CDN Link-->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="sidebar">
+        <div class="logo-details">
+            <div class="logo_name">Awoken's Games</div>
+            <i class='bx bx-menu' id="btn"></i>
+        </div>
+        <ul class="nav-list">
+            <li>
+                <a href="index.html">
+                    <i class='bx bx-home-alt-2'></i>
+                    <span class="links_name">Home</span>
+                </a>
+                <span class="tooltip">Home</span>
+            </li>
+            <li>
+                <a href="changelog.html">
+                    <i class='bx bx-bar-chart-alt-2'></i>
+                    <span class="links_name">Changelog</span>
+                </a>
+                <span class="tooltip">Changelog</span>
+            </li>
+            <li>
+                <a href="developer.html">
+                    <i class='bx bx-code-alt'></i>
+                    <span class="links_name">Developer</span>
+                </a>
+                <span class="tooltip">Developer</span>
+            </li>
+        </ul>
+    </div>
+    <script>
+        let sidebar = document.querySelector(".sidebar");
+        let closeBtn = document.querySelector("#btn");
+        let searchBtn = document.querySelector(".bx-search");
+
+        closeBtn.addEventListener("click", () => {
+            sidebar.classList.toggle("open");
+            menuBtnChange(); //calling the function(optional)
+        });
+
+        searchBtn.addEventListener("click", () => { // Sidebar open when you click on the search iocn
+            sidebar.classList.toggle("open");
+            menuBtnChange(); //calling the function(optional)
+        });
+
+        // following are the code to change sidebar button(optional)
+        function menuBtnChange() {
+            if (sidebar.classList.contains("open")) {
+                closeBtn.classList.replace("bx-menu", "bx-menu-alt-right"); //replacing the iocns class
+            } else {
+                closeBtn.classList.replace("bx-menu-alt-right", "bx-menu"); //replacing the iocns class
+            }
+        }
+    </script>
+</body>
+
+</html>
+
+<div id="Featured">
+    <div class="container">
+        <div class="row">
+            <div class="col-6 col-md-3">
+                <a class="gc2" href="/assets/gfiles/Subway Surfers/monaco.html">
+                    <img class="ft" alt="Subway Surfers" src="https://iili.io/Xbai2p.png">
+                    <h5>Subway Surfers</h5>
+                </a>
+                <!-- https://i.scdn.co/image/ab67616d0000b273222806e5d36a1eae01e9cd9a - https://www.friv5online.com/files/images/65/654f259a05bd00ac90b332f59bbb2584.jpg - https://i1.sndcdn.com/artworks-000581103005-ixk06w-t500x500.jpg - https://subwaysurfers.com/media/3aadwghz/bg.jpg -->
+            </div>
+            <div class="col-6 col-md-3">
+                <a class="gc2" href="https://www.fractionsarecool.gq/assets/gfiles/SpaceCompany/">
+                    <img class="ft" alt="Space Company" src="https://iili.io/XCk2h7.png">
+                    <h5>Space Company</h5>
+                </a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a class="gc2" href="/assets/gfiles/Basketball Stars/basketballstars.html">
+                    <img class="ft" alt="Basketball Stars" src="https://iili.io/XCk3Q9.png">
+                    <h5>Basketball Stars</h5>
+                </a>
+            </div>
+            <div class="col-6 col-md-3">
+                <a class="gc2" href="/assets/gfiles/Paper-io/paper-io.html">
+                    <img class="ft" alt="paper.io" src="https://iili.io/XCkC2j.png">
+                    <h5>Paper.io</h5>
+                </a>
+            </div>
+
+
+            <!-- 6 -->
+            <div class="col-md-2 col-sm-3 col-4">
+                <a title="Cookie Clicker" class="gc2" href="assets/gfiles/CookieClicker/index.html">
+                    <img alt="Cookie Clicker" src="https://iili.io/XCkokQ.png">
+                    <h6>Cookie Clicker</h6>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-3 col-4">
+                <a title="Slope" class="gc2" href="/assets/gfiles/Slope/slope.html">
+                    <img alt="Slope" src="https://iili.io/XCkxpV.png">
+                    <h6>Slope</h6>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-3 col-4">
+                <a title="xx142-b2.exe" class="gc2" href="assets/gfiles/xx142-b2exe/xx142-b2exe.html">
+                    <img alt="xx142-b2.exe" src="https://iili.io/XCkITB.png">
+                    <h6>xx142-b2.exe</h6>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-3 col-4">
+                <a title="Sans Fight Simulator" class="gc2" href="assets/gfiles/SansFightSimulator/sansfightsimulator.html">
+                    <img alt="Sans Fight Simulator" src="https://iili.io/XCkuQ1.png">
+                    <h6>Sans Fight Simualtor</h6>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-3 col-4">
+                <a title="2048" class="gc2" href="assets/gfiles/2048/index.html">
+                    <img alt="2048" src="https://iili.io/XCkRCF.png">
+                    <h6>2048</h6>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-3 col-4">
+                <a title="Retro Bowl" class="gc2" href="assets/gfiles/Retro Bowl/retrobowl.html">
+                    <img alt="Retro Bowl" src="https://iili.io/XCk5Eg.png">
+                    <h6>Retro Bowl</h6>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-3 col-4">
+                <a title="Stickman Hook" class="gc2" href="assets/gfiles/StickmanHook/stickman.html">
+                    <img alt="Stickman Hook" src="https://iili.io/XT2Nl2.md.png">
+                    <h6>Stickman Hook</h6>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-3 col-4">
+                <a title="Temple Run 2" class="gc2" href="assets/gfiles/Temple Run 2 /templerun2.html">
+                    <img alt="Temple Run 2" src="https://iili.io/XT3XmF.png">
+                    <h6>Temple Run 2</h6>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-3 col-4">
+                <a title="Drift Hunters" class="gc2" href="assets/gfiles/Drift Hunters/drifthunters.html">
+                    <img alt="Drift Hunters" src="https://iili.io/XT3Q14.png">
+                    <h6>Drift Hunters</h6>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-3 col-4">
+                <a title="Sonic The Hedgehog" class="gc2" href="assets/gfiles/sonicthehedgehog/sth.html">
+                    <img alt="Sonic The Hedgehog" src="https://iili.io/XTW3MX.png">
+                    <h6>Sonic The Hedgehog</h6>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-3 col-4">
+                <a title="Craftmine" class="gc2" href="assets/gfiles/craftmine/craftmine.html">
+                    <img alt="Craftmine" src="https://iili.io/XlawGI.png">
+                    <h6>Craftmine</h6>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-3 col-4">
+                <a title="Pokemon Collection" class="gc2" href="assets/gfiles/pokemoncollection/index.html">
+                    <img alt="Pokemon Collection" src="https://iili.io/XMdXl2.png">
+                    <h6>Pokemon Collection</h6>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-3 col-4">
+                <a title="Street Fighter Alpha 3" class="gc2" href="assets/gfiles/streetfighter/sfalpha3.html">
+                    <img alt="Street Fighter Alpha 3" src="https://iili.io/XXndE7.png">
+                    <h6>Street Fighter Alpha 3</h6>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-3 col-4">
+                <a title="1v1.lol" class="gc2" href="assets/gfiles/1v1lol/1v1lol.html">
+                    <img alt="1v1.lol" src="https://iili.io/XgrjON.png">
+                    <h6>1v1.lol</h6>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-3 col-4">
+                <a title="Kirby & The Amazing Mirror" class="gc2" href="assets/gfiles/kirby/kirby.html">
+                    <img alt="Kirby & The Amazing Mirror" src="https://iili.io/XgLQLB.png">
+                    <h6>Kirby & The Amazing Mirror</h6>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-3 col-4">
+                <a title="Burrito Bison: Launcha Libre" class="gc2" href="assets/gfiles/burritobison/burritobison.html">
+                    <img alt="Burrito Bison: Launcha Libre" src="https://iili.io/X4W7dF.png">
+                    <h6>Burrito Bison: Launcha Libre</h6>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-3 col-4">
+                <a title="Tunnel Rush" class="gc2" href="assets/gfiles/tunnelrush/tunnelrush.html">
+                    <img alt="Tunnel Rush" src="https://iili.io/X4XL8X.png">
+                    <h6>Tunnel Rush</h6>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-3 col-4">
+                <a title="Moto X3M" class="gc2" href="assets/gfiles/motox3m/motox3m.html">
+                    <img alt="Moto X3M" src="https://iili.io/XbZFHb.png">
+                    <h6>Moto X3M</h6>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-3 col-4">
+                <a title="Madalin Stunt Cars 3" class="gc2" href="assets/gfiles/madalinstuntcars/madalinstuntcars.html">
+                    <img alt="Madalin Stunt Cars 3" src="https://iili.io/Xbt1hQ.png">
+                    <h6>Madalin Stunt Cars 3</h6>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-3 col-4">
+                <a title="Vex 6" class="gc2" href="assets/gfiles/vex6/vex6.html">
+                    <img alt="Vex 6" src="https://iili.io/XbteTv.png">
+                    <h6>Vex 6</h6>
+                </a>
+            </div>
+            <div class="col-md-2 col-sm-3 col-4">
+                <a title="Vex 6" class="gc2" href="assets/gfiles/papaspizzeria/papa.html">
+                    <img alt="Vex 6" src="https://iili.io/XbDhV2.png">
+                    <h6>Vex 6</h6>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+
+</html>
